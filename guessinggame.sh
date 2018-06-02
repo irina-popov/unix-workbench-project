@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function guessinggame {
-	correct=$(ls -l | grep -e "^-" | wc -l)
+	correct=$(ls -al | grep -e "^-" | wc -l)
 	guessed=0
 	echo "Welcome to the Guessing Game!"
 	echo "Guess how many files are in the current folder: "
